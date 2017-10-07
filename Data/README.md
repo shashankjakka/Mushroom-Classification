@@ -1,5 +1,12 @@
 
-**Data Description**
+# Data Description
+
+***mushroom_train*** - 5686 observations and 25 features.
+
+***mushroom_test***  - 2438 observations
+
+
+## Features
 
 
 **cap-shape**: bell=b,conical=c,convex=x,flat=f, knobbed=k,sunken=s
