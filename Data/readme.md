@@ -12,7 +12,7 @@
 
 **odor**: almond=a,anise=l,creosote=c,fishy=y,foul=f,musty=m,none=n,pungent=p,spicy=s
 
-**gill-attachment*: attached=a,descending=d,free=f,notched=n
+**gill-attachment**: attached=a,descending=d,free=f,notched=n
 
 **gill-spacing**: close=c,crowded=w,distant=d
 
