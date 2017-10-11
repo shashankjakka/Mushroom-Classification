@@ -29,6 +29,15 @@ For the case of **Odor** except for the type **'n'** the other odor categories a
 
 Now for the model we use **RandomForestClassifier** ,even the basic model without parameter tuning and cross validation would result in a 100% accuracy! The other classifiers would almost give the same outcome too,so the choice of classifier isn't important.
 
+Splitting the data into Train and Test(0.2) the model gives an accuracy of 1 on the test data.
+
+Confusion Matrix = array([[593,   0],
+       [  0, 545]])
+       
+![Matrix](https://s20.postimg.org/kunm1o74t/confuse.png)
+      
+
+
 Training the RandomForestClassifier and plotting the features importance.
 
 ![Features importance](https://s20.postimg.org/4jiwrm599/features.png)
