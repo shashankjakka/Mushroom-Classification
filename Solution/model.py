@@ -1,4 +1,3 @@
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -27,11 +26,6 @@ def label_encoding(column):
 def encode(df):
       for column in df.columns:
         df[column]=label_encoding(df[column])
-        
-def generate_csv(model,train,target,test,filename):
-  model.fit(train,target)
-  pred=model.predict(target)
-  with open(filename,'wb) as file:
             
             
 def cv(folds,model,X,y):
@@ -43,24 +37,26 @@ def cv(folds,model,X,y):
 ## Reading the data
 df = pd.read_csv('mushroom_train.csv')
 df_test = pd.read_csv('mushroom_test.csv')
-            
-            
+
+
 encode(df)
 encode(df_test)
             
             
-y_df=df.drop(['class'],axis=1)
+y_df=df['class']
 df.drop(['class'],axis=1,inplace=True)
 df.drop(['veil-type'],axis=1,inplace=True)
 df_test.drop(['veil-type'],axis=1,inplace=True)
             
 X=df.values
-y=y.values            
+y=y_df.values            
             
 ## model
 model=RandomForestClassifier(n_estimators=300)
- 
-cv(10,model,X,y)
-            
+
 model.fit(X,y)
-actual=model.predict(df_test)           
+predictions=model.predict(df_test.values)
+
+# To csv
+prediction = pd.DataFrame(predictions,columns=['Class']).to_csv('Submission.csv',columns=['Class'],index=False)
+
