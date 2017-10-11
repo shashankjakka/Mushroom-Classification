@@ -37,9 +37,9 @@ As expected **Odor** seems to be the most relevant feature.
 
 ## KEY TAKE AWAYS
 
-*Almond and Anise smell mushroom -> You will live!__
-*Odorless and green or chocolate or white pores -> You will most probably die!__
-*Any other smell -> Certain death!__
-*The rest ones -> Happy eating!__
+Almond and Anise smell mushroom -> You will live!<br />
+Odorless and green or chocolate or white pores -> You will most probably die!<br />
+Any other smell -> Certain death!<br />
+The rest ones -> Happy eating!<br />
 
 
