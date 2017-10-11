@@ -7,5 +7,5 @@ The data set is pretty straight forward but we could plot some graphs and see wh
 
 **Plotting the correlation matrix**
 
-![alt text](https://postimg.org/image/t2gcv6k9l/)
+![matrix](https://postimg.org/image/t2gcv6k9l/)
 
