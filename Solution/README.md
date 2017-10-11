@@ -1,7 +1,7 @@
 
 # Approach
 
-This data set has **23 coloumns** of which except two features radius and weight are catogorical.So we deal these categorical variables with **LabelEncoder()**.
+This data set has **23 coloumns** of which except two features radius and weight the others are catogorical.We deal with these categorical variables by **Scikit LabelEncoder()**.
 
 The data set is pretty straight forward but we could plot some graphs and see which features are more likely to contribute towards the predictions.
 
@@ -29,7 +29,7 @@ For the case of **Odor** except for the type **'n'** the other odor categories a
 
 Now for the model we use **RandomForestClassifier** ,even the basic model without parameter tuning and cross validation would result in a 100% accuracy! The other classifiers would almost give the same outcome too,so the choice of classifier isn't important.
 
-Splitting the data into Train and Test(0.2) the model gives an accuracy of 1 on the test data.
+Splitting the data into **Train and Test(0.2)** the model gives an accuracy of **1** on the test data.
 
 Confusion Matrix = array([[593,   0],
        [  0, 545]])
@@ -47,7 +47,7 @@ As expected **Odor** seems to be the most relevant feature.
 ## KEY TAKE AWAYS
 
 Almond and Anise smell mushroom -> You will live!<br />
-Odorless green or chocolate or white pores mushrooms -> You will most probably die!<br />
+Odorless green or chocolate or white pore mushrooms -> You will most probably die!<br />
 Any other smell -> Certain death!<br />
 The rest ones -> Happy eating!<br />
 
