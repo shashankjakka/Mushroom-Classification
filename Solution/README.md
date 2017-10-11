@@ -9,7 +9,8 @@ The data set is pretty straight forward but we could plot some graphs and see wh
 
 ![matrix](https://s20.postimg.org/r0kguobod/corr.png)
 
-We can see that the feature **veil-type** shows no correlation that is the feature has just one unique value.So we can drop this feature!
+We can see that the feature **veil-type** shows no correlation,that is the feature has just one unique value.So we can drop this feature!
+
 
 Now we can explore the effect of the features on the predicted class a bit further.
 
@@ -18,13 +19,15 @@ Now we can explore the effect of the features on the predicted class a bit furth
 
 ![odor](https://s20.postimg.org/8q3r6y4v1/odor.png)
 
-![gill_size](https://s20.postimg.org/4sghhji1p/gill_size.png)
+For the case of **Odor** except for the type **'n'** the other odor categories are only linked to one outcome class.This goes to show that Odor could be very important in predicting the right classes.
 
-For the case of **Odor** except for the type **n** the other odor categories are only linked to one outcome class.This goes to show that Odor could be very important in predicting the right classes.
+
+![gill_size](https://s20.postimg.org/4sghhji1p/gill_size.png)
 
 ![spore](https://s20.postimg.org/bhn0xk3dp/spore-print-color.png)
 
-Now for the model we use **RandomForestClassifier** ,even the basic model without parameter tuning and cross validating would result in a 100% accuracy! The other classifiers would almost give the same outcome too,so the choice of classifier isn't important.
+
+Now for the model we use **RandomForestClassifier** ,even the basic model without parameter tuning and cross validation would result in a 100% accuracy! The other classifiers would almost give the same outcome too,so the choice of classifier isn't important.
 
 Training the RandomForestClassifier and plotting the features importance.
 
@@ -34,9 +37,9 @@ As expected **Odor** seems to be the most relevant feature.
 
 ## KEY TAKE AWAYS
 
-Almond and Anise smell mushroom -> You will live!
-Odorless and green or chocolate or white pores -> You will most probably die!
-Any other smell -> Certain death!
-The rest ones -> Happy eating!
+*Almond and Anise smell mushroom -> You will live!__
+*Odorless and green or chocolate or white pores -> You will most probably die!__
+*Any other smell -> Certain death!__
+*The rest ones -> Happy eating!__
 
 
