@@ -33,9 +33,34 @@ def generate_csv(model,train,target,test,filename):
   pred=model.predict(target)
   with open(filename,'wb) as file:
             
+            
+def cv(folds,model,X,y):
+            scores = cross_val_score(model, X, y, cv=folds)
+            print "Cross-validated scores:", scores
+
   
 
 ## Reading the data
 df = pd.read_csv('mushroom_train.csv')
 df_test = pd.read_csv('mushroom_test.csv')
-
+            
+            
+encode(df)
+encode(df_test)
+            
+            
+y_df=df.drop(['class'],axis=1)
+df.drop(['class'],axis=1,inplace=True)
+df.drop(['veil-type'],axis=1,inplace=True)
+df_test.drop(['veil-type'],axis=1,inplace=True)
+            
+X=df.values
+y=y.values            
+            
+## model
+model=RandomForestClassifier(n_estimators=300)
+ 
+cv(10,model,X,y)
+            
+model.fit(X,y)
+actual=model.predict(df_test)           
